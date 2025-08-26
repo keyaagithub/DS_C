@@ -31,6 +31,8 @@ void peek() {
         printf("\nStack is empty.\n");
     } else {
         printf("Top element is: %d\n", stack[top]);
+        int freespace=((float)(MAX-top-1)/MAX)*100;
+        printf("freesize: %d\n",freespace);
     }
 }
 
